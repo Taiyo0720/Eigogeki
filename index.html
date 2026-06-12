@@ -385,7 +385,7 @@ button:hover{
     </button>
 
     <button id="revealDialogBtn" style="visibility: hidden; background-color: red;">
-    次のセリフへ
+    ポーズを解除
     </button>
 
   </div>
@@ -766,7 +766,7 @@ async function playLoop(showAnswer=false){
         .getElementById(
           "status"
         ).textContent=
-          "あなたの番";
+          "あなたの番（ポーズ中）";
 
       playing=false;
       revealBtn.style.visibility="visible";
