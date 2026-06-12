@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Script Reader</title>
+
+<style>
+
+*{
+  box-sizing:border-box;
+}
+
+:root{
+
+  --bg:#f5f7fb;
+
+  --panel:#ffffff;
+
+  --panel2:#eef3fa;
+
+  --text:#1f2937;
+
+  --accent:#3b82f6;
+
+  --accent2:#f59e0b;
+
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:sans-serif;
+
+  height:200vh;
+}
+
+.container{
+  max-width:1200px;
+
+  height:200vh;
+
+  margin:auto;
+
+  padding:20px;
+
+  display:flex;
+  flex-direction:column;
+}
+
+h1{
+  margin-top:0;
+}
+
+.top-panel{
+  border:1px solid #dbe3f0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+
+.grid > div{
+
+  background:#eef3fa;
+
+  padding:12px;
+
+  border-radius:12px;
+
+  border:1px solid #dbe3f0;
+
+}
+
+label{
+  display:block;
+  margin-bottom:4px;
+  font-size:0.9rem;
+}
+
+select,
+input[type="range"]{
+
+  width:100%;
+
+  margin-top:6px;
+}
+
+input[type="checkbox"]{
+
+  background:#eef3fa;
+
+  border:1px solid #dbe3f0;
+
+  border-radius:12px;
+
+  padding:12px;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  background:var(--accent);
+  color:white;
+  font-size:1rem;
+}
+
+button:hover{
+  opacity:.9;
+}
+
+.viewer{
+
+  flex:1;
+
+  min-height:0;
+
+  overflow-y:auto;
+
+  background:var(--panel);
+
+  border-radius:16px;
+
+  padding:20px;
+}
+
+.bottomBar{
+
+  margin-top:15px;
+
+  position:sticky;
+
+  bottom:0;
+
+  background:var(--bg);
+
+  padding-top:10px;
+}
+
+.line{
+  padding:12px;
+  border-radius:12px;
+  margin:10px 0;
+  background:var(--panel2);
+}
+
+.small{
+  opacity:.75;
+}
+
+.current{
+
+  background:#dbeafe;
+
+  border-left:6px solid #3b82f6;
+
+  color:#111827;
+
+}
+
+.speaker{
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.text{
+  white-space:pre-wrap;
+  line-height:1.6;
+}
+
+.controls{
+  margin-top:20px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.counter{
+  margin-top:15px;
+  text-align:center;
+}
+
+.your-turn{
+  margin:20px 0;
+  text-align:center;
+  font-size:3rem;
+  font-weight:bold;
+  color:var(--accent2);
+  animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.05);}
+  100%{transform:scale(1);}
+}
+
+.status{
+  margin-top:10px;
+  text-align:center;
+}
+
+.current-role{
+  text-align:center;
+  margin-top:10px;
+}
+
+.memory-text{
+
+  margin-top:15px;
+
+  font-size:2rem;
+
+  line-height:1.8;
+
+  text-align:center;
+
+  font-weight:bold;
+
+}
+
+.blur{
+
+  filter:blur(10px);
+
+  user-select:none;
+
+}
+
+.hidden{
+
+  color:transparent;
+
+  background:#dbeafe;
+
+  border-radius:8px;
+
+}
+
+@media(max-width:700px){
+
+  .controls{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .your-turn{
+    font-size:2rem;
+  }
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🎭 Script Reader</h1>
+
+  <div class="top-panel">
+
+    <input type="file" id="fileInput" accept=".json">
+
+    <div class="grid" style="margin-top:15px;">
+
+    <div>
+    <label>モード</label>
+    <select id="mode">
+    <option value="normal">通常</option>
+    <option value="practice">練習</option>
+    <option value="memorize">暗記練習</option>
+    </select>
+    </div>
+
+    <div>
+    <label>暗記表示</label>
+    <select id="memorizeMode">
+      <option value="hidden">完全に隠す</option>
+      <option value="blur">ぼかす</option>
+      <option value="first">頭文字のみ</option>
+    </select>
+    </div>
+
+    <div>
+    <label>自分の役</label>
+    <select id="myRole"></select>
+    </div>
+
+    <div>
+    <label>音声</label>
+    <select id="speechMode">
+    <option value="speech">🔊読み上げ</option>
+    <option value="silent">🔇静音</option>
+    </select>
+    </div>
+
+    <div>
+    <label>声色</label>
+    <select id="voiceSelect"></select>
+    </div>
+
+    <label>
+      <input type="checkbox"
+            id="skipStage">
+      ト書きを読み飛ばす
+    </label>
+
+    <div>
+    <label>速度</label>
+    <input
+    type="range"
+    id="rate"
+    min="0.5"
+    max="2"
+    step="0.1"
+    value="1">
+    <div id="rateLabel">1.0x</div>
+    </div>
+
+    <div>
+    <label>ページ</label>
+    <select id="pageSelect">
+    </select>
+    </div>
+
+  </div>
+
+  <div style="margin-top:15px;">
+  <label>
+  <input type="checkbox" id="autoAdvance" checked>
+  自動送り
+  </label>
+  </div>
+
+</div>
+
+<div class="viewer">
+
+  <div id="yourTurnArea"></div>
+
+  <div id="viewer"></div>
+
+</div>
+
+<div class="bottomBar">
+
+  <div class="counter" id="counter"></div>
+
+  <div class="status" id="status">
+  停止中
+  </div>
+
+  <div class="current-role" id="roleInfo"></div>
+
+  <div class="controls">
+
+    <button id="prevBtn">
+    ◀ 前へ
+    </button>
+
+    <button id="playBtn">
+    ▶ 再生
+    </button>
+
+    <button id="pauseBtn">
+    ⏸ 停止
+    </button>
+
+    <button id="nextBtn">
+    次へ ▶
+    </button>
+
+    <button id="deeplBtn">
+    🌐 DeepLで翻訳
+    </button>
+
+  </div>
+
+</div>
+
+<script>
+
+let scriptData=[];
+let currentIndex=0;
+
+let playing=false;
+
+let voices = [];
+
+document
+.getElementById("deeplBtn")
+.onclick = ()=>{
+
+  if(
+    !scriptData[currentIndex]
+  ){
+    return;
+  }
+
+  const text =
+    scriptData[currentIndex]
+      .text || "";
+
+  const url =
+    "https://www.deepl.com/translator#en/ja/" +
+    encodeURIComponent(text);
+
+  window.open(
+    url,
+    "_blank"
+  );
+
+};
+
+function firstLetterHint(text){
+
+  return text
+    .split(/\s+/)
+    .map(word=>{
+
+      if(word.length===0){
+        return "";
+      }
+
+      return word[0] + "_".repeat(
+        Math.max(
+          word.length-1,
+          0
+        )
+      );
+
+    })
+    .join(" ");
+
+}
+
+function loadVoices(){
+
+  voices = speechSynthesis
+    .getVoices()
+    .filter(v =>
+      v.name.includes("English")
+    );
+
+  const sel =
+    document.getElementById(
+      "voiceSelect"
+    );
+
+  sel.innerHTML =
+    voices.map(
+      (v,i)=>
+      `<option value="${i}">
+        ${v.name}
+      </option>`
+    ).join("");
+}
+
+speechSynthesis.onvoiceschanged =
+  loadVoices;
+
+loadVoices();
+
+function sleep(ms){
+  return new Promise(r=>setTimeout(r,ms));
+}
+
+function speakerColor(name){
+
+  let h=0;
+
+  for(const c of name){
+    h+=c.charCodeAt(0);
+  }
+
+  return `hsl(${h%360} 80% 70%)`;
+}
+
+function render(){
+
+  const viewer=
+    document.getElementById("viewer");
+
+  viewer.innerHTML="";
+
+  for(
+    let i=currentIndex-2;
+    i<=currentIndex+2;
+    i++
+  ){
+
+    if(i<0||i>=scriptData.length)
+      continue;
+
+    const item=scriptData[i];
+
+    const div=
+      document.createElement("div");
+
+    div.className="line";
+
+    if(i===currentIndex){
+      div.classList.add("current");
+    }else{
+      div.classList.add("small");
+    }
+
+    const speaker=
+      item.speaker || "STAGE";
+
+    div.innerHTML=`
+      <div
+        class="speaker"
+        style="color:${speakerColor(speaker)}">
+        ${speaker}
+      </div>
+      <div class="text">
+        ${item.text||""}
+      </div>
+    `;
+
+    viewer.appendChild(div);
+  }
+
+  document
+    .getElementById("counter")
+    .textContent=
+      `${currentIndex+1} / ${scriptData.length}`;
+
+  updateYourTurn();
+}
+
+function updateYourTurn(){
+
+  const area=
+    document.getElementById(
+      "yourTurnArea"
+    );
+
+  area.innerHTML="";
+
+  if(
+    !scriptData[currentIndex]
+  ) return;
+
+  const mode=
+    document.getElementById("mode")
+    .value;
+
+  const role=
+    document.getElementById("myRole")
+    .value;
+
+  const speaker=
+    scriptData[currentIndex]
+      .speaker;
+
+  if(
+    (mode==="practice" ||
+    mode==="memorize") &&
+    speaker===role
+  ){
+
+    const text =
+      scriptData[currentIndex]
+        .text || "";
+
+    const memorizeMode =
+      document
+        .getElementById(
+          "memorizeMode"
+        )
+        .value;
+
+    if(mode==="practice"){
+
+      area.innerHTML=`
+        <div class="your-turn">
+          YOUR TURN
+        </div>
+      `;
+
+    } else if(mode==="memorize"){
+
+      let display="";
+
+      if(
+        memorizeMode==="hidden"
+      ){
+
+        display=
+          "████████████";
+
+      }else if(
+        memorizeMode==="blur"
+      ){
+
+        display=
+          `<span class="blur">
+            ${text}
+          </span>`;
+
+      }else{
+
+        display=
+          firstLetterHint(text);
+
+      }
+
+      area.innerHTML=`
+
+        <div class="your-turn">
+          YOUR TURN
+        </div>
+
+        <div class="memory-text">
+          ${display}
+        </div>
+
+      `;
+
+    }
+
+  }
+
+}
+
+function estimateMs(text){
+
+  const words=
+    text.trim()
+      .split(/\s+/)
+      .length;
+
+  const rate=
+    Number(
+      document
+      .getElementById("rate")
+      .value
+    );
+
+  return (
+    words/150
+  )*60000/rate;
+
+}
+
+function speak(text){
+
+  return new Promise(resolve=>{
+
+    const utter=
+      new SpeechSynthesisUtterance(
+        text
+      );
+
+    utter.rate=
+      Number(
+        document
+        .getElementById("rate")
+        .value
+      );
+
+    utter.onend=resolve;
+
+    const voice =
+      voices[
+        document
+          .getElementById(
+            "voiceSelect"
+          )
+          .value
+      ];
+
+    utter.voice = voice;
+
+    speechSynthesis.speak(
+      utter
+    );
+
+  });
+
+}
+
+async function playLoop(){
+
+  if(playing) return;
+
+  playing=true;
+
+  document
+    .getElementById("status")
+    .textContent=
+      "再生中";
+
+  while(
+    playing &&
+    currentIndex<scriptData.length
+  ){
+
+    render();
+
+    const item=
+      scriptData[currentIndex];
+
+    const skipStage =
+      document
+        .getElementById("skipStage")
+        .checked;
+
+    if(
+      skipStage &&
+      item.type==="stage"
+    ){
+      currentIndex++;
+      continue;
+    }
+
+    const mode=
+      document
+      .getElementById("mode")
+      .value;
+
+    const myRole=
+      document
+      .getElementById("myRole")
+      .value;
+
+    const speechMode=
+      document
+      .getElementById(
+        "speechMode"
+      ).value;
+
+    if(
+      (mode==="practice" ||
+      mode==="memorize") &&
+      item.speaker===myRole
+    ){
+
+      document
+        .getElementById(
+          "status"
+        ).textContent=
+          "あなたの番";
+
+      playing=false;
+      return;
+
+    }
+
+    if(
+      speechMode==="speech"
+    ){
+
+      await speak(
+        item.text||""
+      );
+
+    }else{
+
+      await sleep(
+        estimateMs(
+          item.text||""
+        )
+      );
+
+    }
+
+    if(!playing) return;
+
+    currentIndex++;
+
+    if(
+      currentIndex>=
+      scriptData.length
+    ){
+      break;
+    }
+
+  }
+
+  playing=false;
+
+  document
+    .getElementById("status")
+    .textContent=
+      "停止中";
+
+  render();
+
+}
+
+function pausePlayback(){
+
+  playing=false;
+
+  speechSynthesis.cancel();
+
+  document
+    .getElementById("status")
+    .textContent=
+      "停止中";
+
+}
+
+function next(){
+
+  pausePlayback();
+
+  if(
+    currentIndex<
+    scriptData.length-1
+  ){
+    currentIndex++;
+    render();
+  }
+
+}
+
+function prev(){
+
+  pausePlayback();
+
+  if(currentIndex>0){
+    currentIndex--;
+    render();
+  }
+
+}
+
+document
+.getElementById("playBtn")
+.onclick=playLoop;
+
+document
+.getElementById("pauseBtn")
+.onclick=pausePlayback;
+
+document
+.getElementById("nextBtn")
+.onclick=next;
+
+document
+.getElementById("prevBtn")
+.onclick=prev;
+
+document
+.getElementById("rate")
+.oninput=e=>{
+
+  document
+    .getElementById(
+      "rateLabel"
+    )
+    .textContent=
+      Number(
+        e.target.value
+      ).toFixed(1)+"x";
+
+};
+
+document
+.getElementById("mode")
+.onchange=render;
+
+document
+.getElementById("myRole")
+.onchange=render;
+
+const pageSelect =
+  document.getElementById(
+    "pageSelect"
+  );
+
+function initScript(){
+  currentIndex=0;
+
+  const speakers=
+    [...new Set(
+      scriptData
+      .map(x=>x.speaker)
+      .filter(Boolean)
+    )];
+
+    const pages =
+      [
+      ...new Set(
+        scriptData
+          .map(x=>x.page)
+          .filter(Boolean)
+      )
+      ];
+
+    pageSelect.innerHTML =
+      pages.map(
+        p =>
+        `<option value="${p}">
+          Page ${p}
+        </option>`
+      ).join("");
+
+    pageSelect.onchange = e=>{
+
+      pausePlayback();
+
+      const page =
+        Number(e.target.value);
+
+      const idx =
+        scriptData.findIndex(
+          x=>x.page===page
+        );
+
+      if(idx>=0){
+
+        currentIndex = idx;
+
+        render();
+
+      }
+
+    };
+
+  const roleSel=
+    document
+    .getElementById(
+      "myRole"
+    );
+
+  roleSel.innerHTML=
+    speakers
+    .map(s=>
+      `<option>${s}</option>`
+    )
+    .join("");
+
+  render();
+}
+
+async function loadJson(){
+
+  const response =
+    await fetch("./twelve_angry_men.json");
+
+  scriptData =
+    await response.json();
+
+  initScript();
+
+}
+
+loadJson();
+
+document
+.getElementById("fileInput")
+.addEventListener(
+  "change",
+  async e=>{
+
+    const file=
+      e.target.files[0];
+
+    if(!file) return;
+
+    const text=
+      await file.text();
+
+    scriptData=
+      JSON.parse(text);
+
+    initScript();
+
+  }
+);
+
+document
+.addEventListener(
+  "keydown",
+  e=>{
+
+    if(
+      e.target.tagName==="INPUT"||
+      e.target.tagName==="SELECT"
+    ){
+      return;
+    }
+
+    if(e.code==="Space"){
+
+      e.preventDefault();
+
+      if(playing){
+        pausePlayback();
+      }else{
+        playLoop();
+      }
+
+    }
+
+    if(
+      e.code==="ArrowRight"
+    ){
+      next();
+    }
+
+    if(
+      e.code==="ArrowLeft"
+    ){
+      prev();
+    }
+
+    if(
+      e.code==="Enter"
+    ){
+
+      const mode=
+        document
+        .getElementById("mode")
+        .value;
+
+      const role=
+        document
+        .getElementById("myRole")
+        .value;
+
+      if(
+        mode==="practice" &&
+        scriptData[currentIndex]
+          ?.speaker===role
+      ){
+
+        currentIndex++;
+
+        render();
+
+        playLoop();
+
+      }
+
+    }
+
+  }
+);
+
+</script>
+
+</body>
+</html>
