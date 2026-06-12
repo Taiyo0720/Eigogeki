@@ -175,7 +175,7 @@ button:hover{
 }
 
 .controls{
-  margin-top:20px;
+  margin-top:10px;
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:10px;
@@ -380,6 +380,14 @@ button:hover{
     🌐 DeepLで翻訳
     </button>
 
+    <button id="copyCurrentBtn">
+    📋 このセリフをコピー
+    </button>
+
+    <button id="revealDialogBtn" style="visibility: hidden; background-color: red;">
+    次のセリフへ
+    </button>
+
   </div>
 
 </div>
@@ -393,6 +401,8 @@ let currentPage=0;
 let playing=false;
 
 let voices = [];
+
+const revealBtn = document.getElementById("revealDialogBtn");
 
 document
 .getElementById("deeplBtn")
@@ -445,19 +455,13 @@ function loadVoices(){
 
   voices = speechSynthesis
     .getVoices();
-  const filtered =
-    voices 
-      .filter(v =>
-        v.name.includes("English")
-      )
-  if(filtered){
-    voices = filtered;
-  }
 
   const sel =
     document.getElementById(
       "voiceSelect"
     );
+
+  const previous = sel.value;
 
   sel.innerHTML =
     voices.map(
@@ -466,6 +470,13 @@ function loadVoices(){
         ${v.name}
       </option>`
     ).join("");
+
+  if(
+    previous &&
+    previous < voices.length
+  ){
+    sel.value = previous;
+  }
 }
 
 speechSynthesis.onvoiceschanged =
@@ -488,7 +499,7 @@ function speakerColor(name){
   return `hsl(${h%360} 80% 70%)`;
 }
 
-function render(){
+function render(showAnswer=false){
 
   const viewer=
     document.getElementById("viewer");
@@ -519,23 +530,59 @@ function render(){
 
     const speaker=
       item.speaker || "STAGE";
+
+    const mode=
+      document.getElementById("mode")
+      .value;
+
+    const role=
+      document.getElementById("myRole")
+      .value;
+
     
-    if(item.direction){
-      const directionText = `[${item.direction}]`;
+    let displayText = "";
+
+    if(
+      (mode==="memorize") &&
+      speaker===role &&
+      (!showAnswer ||
+      i!==currentIndex)
+    ){
+      const memorizeMode =
+        document
+          .getElementById(
+            "memorizeMode"
+          )
+          .value;
+      if(
+        memorizeMode==="hidden"
+      ){
+        displayText="████████████";
+      }else if(
+        memorizeMode==="blur"
+      ){
+        displayText=
+          `<span class="blur">
+            ${item.text||""}
+          </span>`;
+      }else{
+        displayText=firstLetterHint(item.text||"");
+      }
+
     }else{
-      const directionText = "";
+      displayText=item.text||""
     }
 
     div.innerHTML=`
-      <div
-        class="speaker"
-        style="color:${speakerColor(speaker)}">
-        ${speaker}: ${directionText}
-      </div>
-      <div class="text">
-        ${item.text||""}
-      </div>
-    `;
+        <div
+          class="speaker"
+          style="color:${speakerColor(speaker)}">
+          ${speaker}: ${(item.direction) ? `[${item.direction}]` : ""}
+        </div>
+        <div class="text">
+          ${displayText}
+        </div>
+      `;
 
     viewer.appendChild(div);
   }
@@ -579,65 +626,11 @@ function updateYourTurn(){
     speaker===role
   ){
 
-    const text =
-      scriptData[currentIndex]
-        .text || "";
-
-    const memorizeMode =
-      document
-        .getElementById(
-          "memorizeMode"
-        )
-        .value;
-
-    if(mode==="practice"){
-
-      area.innerHTML=`
-        <div class="your-turn">
-          YOUR TURN
-        </div>
-      `;
-
-    } else if(mode==="memorize"){
-
-      let display="";
-
-      if(
-        memorizeMode==="hidden"
-      ){
-
-        display=
-          "████████████";
-
-      }else if(
-        memorizeMode==="blur"
-      ){
-
-        display=
-          `<span class="blur">
-            ${text}
-          </span>`;
-
-      }else{
-
-        display=
-          firstLetterHint(text);
-
-      }
-
-      area.innerHTML=`
-
-        <div class="your-turn">
-          YOUR TURN
-        </div>
-
-        <div class="memory-text">
-          ${display}
-        </div>
-
-      `;
-
-    }
+    area.innerHTML=`
+      <div class="your-turn">
+        YOUR TURN
+      </div>
+    `;
 
   }
 
@@ -700,7 +693,19 @@ function speak(text){
 
 }
 
-async function playLoop(){
+function removeInlineStage(text){
+
+  return text.replace(
+    /\[[^\]]*\]/g,
+    ""
+  ).replace(
+    /\s+/g,
+    " "
+  ).trim();
+
+}
+
+async function playLoop(showAnswer=false){
 
   if(playing) return;
 
@@ -716,7 +721,7 @@ async function playLoop(){
     currentIndex<scriptData.length
   ){
 
-    render();
+    render(showAnswer);
 
     const item=
       scriptData[currentIndex];
@@ -753,7 +758,8 @@ async function playLoop(){
     if(
       (mode==="practice" ||
       mode==="memorize") &&
-      item.speaker===myRole
+      item.speaker===myRole &&
+      !showAnswer
     ){
 
       document
@@ -763,23 +769,39 @@ async function playLoop(){
           "あなたの番";
 
       playing=false;
+      revealBtn.style.visibility="visible";
       return;
 
     }
 
     if(
-      speechMode==="speech"
+      speechMode==="speech" ||
+      showAnswer
     ){
 
-      await speak(
-        item.text||""
-      );
+      let text =
+        item.text || "";
+
+      if(
+        document
+          .getElementById("skipStage")
+          .checked
+      ){
+
+        text =
+          removeInlineStage(text);
+
+      }
+
+      text = text.replace("―", ",");
+
+      await speak(text);
 
     }else{
 
       await sleep(
         estimateMs(
-          item.text||""
+          removeInlineStage(item.text||"")
         )
       );
 
@@ -788,6 +810,8 @@ async function playLoop(){
     if(!playing) return;
 
     currentIndex++;
+
+    showAnswer=false;
 
     if(
       currentIndex>=
@@ -1060,6 +1084,29 @@ document
 
   }
 );
+
+document
+.getElementById(
+  "copyCurrentBtn"
+)
+.onclick = async ()=>{
+
+  const item =
+    scriptData[currentIndex];
+
+  if(!item) return;
+
+  await navigator.clipboard.writeText(
+    item.text || ""
+  );
+
+};
+
+revealBtn.onclick = ()=>{
+  playLoop(showAnswer=true);
+  revealBtn.style.visibility = "hidden";
+};
+
 
 </script>
 
