@@ -388,6 +388,7 @@ button:hover{
 
 let scriptData=[];
 let currentIndex=0;
+let currentPage=0;
 
 let playing=false;
 
@@ -443,10 +444,15 @@ function firstLetterHint(text){
 function loadVoices(){
 
   voices = speechSynthesis
-    .getVoices()
-    .filter(v =>
-      v.name.includes("English")
-    );
+    .getVoices();
+  const filtered =
+    voices 
+      .filter(v =>
+        v.name.includes("English")
+      )
+  if(filtered){
+    voices = filtered;
+  }
 
   const sel =
     document.getElementById(
@@ -513,12 +519,18 @@ function render(){
 
     const speaker=
       item.speaker || "STAGE";
+    
+    if(item.direction){
+      const directionText = `[${item.direction}]`;
+    }else{
+      const directionText = "";
+    }
 
     div.innerHTML=`
       <div
         class="speaker"
         style="color:${speakerColor(speaker)}">
-        ${speaker}
+        ${speaker}: ${directionText}
       </div>
       <div class="text">
         ${item.text||""}
@@ -531,7 +543,7 @@ function render(){
   document
     .getElementById("counter")
     .textContent=
-      `${currentIndex+1} / ${scriptData.length}`;
+      `${currentIndex+1} / ${scriptData.length} (p.${scriptData[currentIndex].page || "?"})`;
 
   updateYourTurn();
 }
