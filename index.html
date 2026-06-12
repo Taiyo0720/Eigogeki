@@ -673,6 +673,7 @@ function speak(text){
       );
 
     utter.onend=resolve;
+    utter.lang="en-US";
 
     const voice =
       voices[
