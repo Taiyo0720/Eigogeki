@@ -673,7 +673,6 @@ function speak(text){
       );
 
     utter.onend=resolve;
-    utter.lang="en-US";
 
     const voice =
       voices[
@@ -685,6 +684,7 @@ function speak(text){
       ];
 
     utter.voice = voice;
+    utter.lang=voice.lang;
 
     speechSynthesis.speak(
       utter
