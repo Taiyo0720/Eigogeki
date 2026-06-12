@@ -555,7 +555,7 @@
     "type": "dialogue",
     "speaker": "7TH JUROR",
     "direction": "to the 2ND JUROR",
-    "text": "This better be fast. I got tickets to a ball game tonight. Yankees ― Cleveland. We got this new kid pitching, Modjelewski, or whatever his name is. He's a bull, this kid. [He shoots his hand forward and out to indicate the path of a curve ball] Shhooooom. A real jug handle.  You're quite a ball fan, aren't you? [He turns to the FOREMAN.] Where do you want us to sit?"
+    "text": "This better be fast. I got tickets to a ball game tonight. Yankees ― Cleveland. We got this new kid pitching, Modjelewski, or whatever his name is. He's a bull, this kid. [He shoots his hand forward and out to indicate the path of a curve ball] Shhooooom. A real jug handle."
   },
   {
     "id": 76,
@@ -663,7 +663,7 @@
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "to the 8TH JUROR",
-    "text": "How about sitting down? The gentleman at the window. The 8TH JUROR turns, startled. How about sitting down?"
+    "text": "How about sitting down?"
   },
   {
     "id": 90,
@@ -673,11 +673,11 @@
   },
   {
     "id": 91,
-    "page": 5,
+    "page": 6,
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "to the 8TH JUROR",
-    "text": "The gentleman at the window. How about sitting down?"
+    "text": "The gentleman at the window."
   },
   {
     "id": 92,
@@ -687,7 +687,7 @@
   },
   {
     "id": 93,
-    "page": 5,
+    "page": 6,
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "to the 8TH JUROR",
@@ -859,7 +859,7 @@
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "",
-    "text": "Anybody doesn't want to vote? [He looks around.]  All right. This has to be a twelve-to-nothing vote either way. That's the law. OK, are we ready? All those voting \"guilty\" raise your hands. Seven or eight hands go up immediately. Several others go up more slowly. Everyone looks around the table as the FOREMAN rises and begins to count hands. The 9TH JUROR's hand goes up now, and all hands are raised except the 8TH JUROR's. ... Nine ― ten ― eleven. That's eleven for \"guilty.\" OK. \"Not guilty\"? The 8TH JUROR slowly raises his hand. One. Right. OK, eleven to one ―\"guilty.\" Now we know where we are. [He resumes his seat.]"
+    "text": "Anybody doesn't want to vote? [He looks around.]"
   },
   {
     "id": 116,
@@ -873,7 +873,7 @@
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "",
-    "text": "All right. This has to be a twelve-to-nothing vote either way. That's the law. OK, are we ready? All those voting \"guilty\" raise your hands.  ... Nine ― ten ― eleven. That's eleven for \"guilty.\" OK. \"Not guilty\"? The 8TH JUROR slowly raises his hand. One. Right. OK, eleven to one ―\"guilty.\" Now we know where we are. [He resumes his seat.]"
+    "text": "All right. This has to be a twelve-to-nothing vote either way. That's the law. OK, are we ready? All those voting \"guilty\" raise your hands."
   },
   {
     "id": 118,
@@ -887,7 +887,7 @@
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "",
-    "text": "... Nine ― ten ― eleven. That's eleven for \"guilty.\" OK. \"Not guilty\"?  One. Right. OK, eleven to one ―\"guilty.\" Now we know where we are. [He resumes his seat.]"
+    "text": "... Nine ― ten ― eleven. That's eleven for \"guilty.\" OK. \"Not guilty\"?"
   },
   {
     "id": 120,
@@ -7453,10 +7453,24 @@
     "type": "dialogue",
     "speaker": "5TH JUROR",
     "direction": "moving to the 8TH JUROR",
-    "text": "Wait a minute. Give me that. The 8TH JUROR hands the knife to the 5TH JUROR. He closes the knife and holds it gingerly. I hate these things. I grew up with them."
+    "text": "Wait a minute. Give me that."
   },
   {
     "id": 963,
+    "page": 57,
+    "type": "stage",
+    "text": "The 8TH JUROR hands the knife to the 5TH JUROR. He closes the knife and holds it gingerly."
+  },
+  {
+    "id": 964,
+    "page": 57,
+    "type": "dialogue",
+    "speaker": "5TH JUROR",
+    "direction": "moving to the 8TH JUROR",
+    "text": "I hate these things. I grew up with them."
+  },
+  {
+    "id": 965,
     "page": 57,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -7464,7 +7478,7 @@
     "text": "Have you seen them used in fights?"
   },
   {
-    "id": 964,
+    "id": 966,
     "page": 57,
     "type": "dialogue",
     "speaker": "5TH JUROR",
@@ -7472,7 +7486,7 @@
     "text": "Too many of them. On my stoop. In my backyard. In the lot across the street. Switch knives came with the neighborhood where I lived. Funny, I wasn't thinking of it. I guess you try to forget those things. You don't use this kind of knife that way. You have to hold it like this to release the blade. In order to stab downward, you would have to change your grip."
   },
   {
-    "id": 965,
+    "id": 967,
     "page": 58,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -7480,36 +7494,18 @@
     "text": "How do you use it?"
   },
   {
-    "id": 966,
-    "page": 58,
-    "type": "dialogue",
-    "speaker": "5TH JUROR",
-    "direction": "",
-    "text": "Underhanded. The 5TH JUROR flicks the knife open and, holding it underhanded, swings round and slashes swiftly forward and upward. Like that. Anyone who's ever used a switch knife would never handle it any other way."
-  },
-  {
-    "id": 967,
-    "page": 58,
-    "type": "dialogue",
-    "speaker": "8TH JUROR",
-    "direction": "",
-    "text": "Are you sure?"
-  },
-  {
     "id": 968,
     "page": 58,
     "type": "dialogue",
     "speaker": "5TH JUROR",
     "direction": "",
-    "text": "I'm sure. The 5TH JUROR closes the blade and flicks it open again. That's why they're made like this."
+    "text": "Underhanded."
   },
   {
     "id": 969,
     "page": 58,
-    "type": "dialogue",
-    "speaker": "8TH JUROR",
-    "direction": "",
-    "text": "Everyone agreed that the boy is pretty handy with a knife, didn't they?"
+    "type": "stage",
+    "text": "The 5TH JUROR flicks the knife open and, holding it underhanded, swings round and slashes swiftly forward and upward."
   },
   {
     "id": 970,
@@ -7517,15 +7513,15 @@
     "type": "dialogue",
     "speaker": "5TH JUROR",
     "direction": "",
-    "text": "That's right."
+    "text": "Like that. Anyone who's ever used a switch knife would never handle it any other way."
   },
   {
     "id": 971,
     "page": 58,
     "type": "dialogue",
     "speaker": "8TH JUROR",
-    "direction": "to the 5TH JUROR",
-    "text": "Do you think he would have made the kind of wound that killed his father?"
+    "direction": "",
+    "text": "Are you sure?"
   },
   {
     "id": 972,
@@ -7533,15 +7529,13 @@
     "type": "dialogue",
     "speaker": "5TH JUROR",
     "direction": "",
-    "text": "Not with the experience he'd had with these things. No, I don't think he would. He'd go for him underhanded..."
+    "text": "I'm sure."
   },
   {
     "id": 973,
     "page": 58,
-    "type": "dialogue",
-    "speaker": "3RD JUROR",
-    "direction": "",
-    "text": "How do you know? What ― were you in the room when the father was killed?"
+    "type": "stage",
+    "text": "The 5TH JUROR closes the blade and flicks it open again."
   },
   {
     "id": 974,
@@ -7549,10 +7543,64 @@
     "type": "dialogue",
     "speaker": "5TH JUROR",
     "direction": "",
-    "text": "No, and neither was anyone else. The 5TH JUROR sticks the knife in the table and crosses away."
+    "text": "That's why they're made like this."
   },
   {
     "id": 975,
+    "page": 58,
+    "type": "dialogue",
+    "speaker": "8TH JUROR",
+    "direction": "",
+    "text": "Everyone agreed that the boy is pretty handy with a knife, didn't they?"
+  },
+  {
+    "id": 976,
+    "page": 58,
+    "type": "dialogue",
+    "speaker": "5TH JUROR",
+    "direction": "",
+    "text": "That's right."
+  },
+  {
+    "id": 977,
+    "page": 58,
+    "type": "dialogue",
+    "speaker": "8TH JUROR",
+    "direction": "to the 5TH JUROR",
+    "text": "Do you think he would have made the kind of wound that killed his father?"
+  },
+  {
+    "id": 978,
+    "page": 58,
+    "type": "dialogue",
+    "speaker": "5TH JUROR",
+    "direction": "",
+    "text": "Not with the experience he'd had with these things. No, I don't think he would. He'd go for him underhanded..."
+  },
+  {
+    "id": 979,
+    "page": 58,
+    "type": "dialogue",
+    "speaker": "3RD JUROR",
+    "direction": "",
+    "text": "How do you know? What ― were you in the room when the father was killed?"
+  },
+  {
+    "id": 980,
+    "page": 58,
+    "type": "dialogue",
+    "speaker": "5TH JUROR",
+    "direction": "",
+    "text": "No, and neither was anyone else."
+  },
+  {
+    "id": 981,
+    "page": 58,
+    "type": "stage",
+    "text": "The 5TH JUROR sticks the knife in the table and crosses away."
+  },
+  {
+    "id": 982,
     "page": 58,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -7560,7 +7608,7 @@
     "text": "You're giving us a lot of mumbo-jumbo here. I don't believe it."
   },
   {
-    "id": 976,
+    "id": 983,
     "page": 58,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -7568,7 +7616,7 @@
     "text": "I don't think you can determine what type of wound this boy might or might not have made simply because he knows how to handle a knife."
   },
   {
-    "id": 977,
+    "id": 984,
     "page": 58,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -7576,15 +7624,21 @@
     "text": "That's right. That's absolutely right."
   },
   {
-    "id": 978,
+    "id": 985,
     "page": 58,
     "type": "dialogue",
     "speaker": "8TH JUROR",
     "direction": "looking at the 12TH JUROR",
-    "text": "What do you think? The 12TH JUROR hesitates for a moment. He is confused, but trying to be honest."
+    "text": "What do you think?"
   },
   {
-    "id": 979,
+    "id": 986,
+    "page": 58,
+    "type": "stage",
+    "text": "The 12TH JUROR hesitates for a moment. He is confused, but trying to be honest."
+  },
+  {
+    "id": 987,
     "page": 58,
     "type": "dialogue",
     "speaker": "12TH JUROR",
@@ -7592,7 +7646,7 @@
     "text": "Well ― I don't know..."
   },
   {
-    "id": 980,
+    "id": 988,
     "page": 59,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -7600,7 +7654,7 @@
     "text": "What do you mean ― you don't know?"
   },
   {
-    "id": 981,
+    "id": 989,
     "page": 59,
     "type": "dialogue",
     "speaker": "12TH JUROR",
@@ -7608,15 +7662,21 @@
     "text": "I don't know,"
   },
   {
-    "id": 982,
+    "id": 990,
     "page": 59,
     "type": "dialogue",
     "speaker": "8TH JUROR",
     "direction": "to the 7TH JUROR",
-    "text": "What about you? The 7TH JUROR looks around the table momentarily."
+    "text": "What about you?"
   },
   {
-    "id": 983,
+    "id": 991,
+    "page": 59,
+    "type": "stage",
+    "text": "The 7TH JUROR looks around the table momentarily."
+  },
+  {
+    "id": 992,
     "page": 59,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -7624,7 +7684,7 @@
     "text": "Just a minute. According to the woman across the street..."
   },
   {
-    "id": 984,
+    "id": 993,
     "page": 59,
     "type": "dialogue",
     "speaker": "7TH JUROR",
@@ -7632,7 +7692,7 @@
     "text": "Listen, I'll tell you something. I'm a little sick of this whole thing already. All this yacking is getting us nowhere so I'm going to break it up here. I'm changing my vote to \"not guilty.\""
   },
   {
-    "id": 985,
+    "id": 994,
     "page": 59,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -7640,7 +7700,7 @@
     "text": "You're what?"
   },
   {
-    "id": 986,
+    "id": 995,
     "page": 59,
     "type": "dialogue",
     "speaker": "7TH JUROR",
@@ -7648,7 +7708,7 @@
     "text": "You heard me. I've had enough."
   },
   {
-    "id": 987,
+    "id": 996,
     "page": 59,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -7656,7 +7716,7 @@
     "text": "What do you mean ― you've had enough? That's no answer."
   },
   {
-    "id": 988,
+    "id": 997,
     "page": 59,
     "type": "dialogue",
     "speaker": "7TH JUROR",
@@ -7664,7 +7724,7 @@
     "text": "Hey, listen you! Just worry about yourself!"
   },
   {
-    "id": 989,
+    "id": 998,
     "page": 59,
     "type": "dialogue",
     "speaker": "11TH JUROR",
@@ -7672,7 +7732,7 @@
     "text": "He's right. That is not an answer. What kind of man are you? You have sat here and voted guilty with everyone else because there are some baseball tickets burning a hole in your pocket. Now you have changed your vote because you say you're sick of all the talking here."
   },
   {
-    "id": 990,
+    "id": 999,
     "page": 59,
     "type": "dialogue",
     "speaker": "7TH JUROR",
@@ -7680,7 +7740,7 @@
     "text": "Listen, buddy ―"
   },
   {
-    "id": 991,
+    "id": 1000,
     "page": 59,
     "type": "dialogue",
     "speaker": "11TH JUROR",
@@ -7688,7 +7748,7 @@
     "text": "You have no right to play like this with a man's life. This is a terrible and ugly thing to do. Don't you care...?"
   },
   {
-    "id": 992,
+    "id": 1001,
     "page": 59,
     "type": "dialogue",
     "speaker": "7TH JUROR",
@@ -7696,7 +7756,7 @@
     "text": "Now, wait a minute. You can't talk like that to me!"
   },
   {
-    "id": 993,
+    "id": 1002,
     "page": 59,
     "type": "dialogue",
     "speaker": "11TH JUROR",
@@ -7704,7 +7764,7 @@
     "text": "I can talk like that to you. If you want to vote not guilty, then do it because you're convinced the man is not guilty ― not because you've had enough. And if you think he's guilty, then vote that way, or don't you have the guts to do what you think is right?"
   },
   {
-    "id": 994,
+    "id": 1003,
     "page": 59,
     "type": "dialogue",
     "speaker": "7TH JUROR",
@@ -7712,7 +7772,7 @@
     "text": "Now, listen..."
   },
   {
-    "id": 995,
+    "id": 1004,
     "page": 59,
     "type": "dialogue",
     "speaker": "11TH JUROR",
@@ -7720,7 +7780,7 @@
     "text": "Guilty or not guilty?"
   },
   {
-    "id": 996,
+    "id": 1005,
     "page": 59,
     "type": "dialogue",
     "speaker": "7TH JUROR",
@@ -7728,7 +7788,7 @@
     "text": "I told you ― not guilty."
   },
   {
-    "id": 997,
+    "id": 1006,
     "page": 59,
     "type": "dialogue",
     "speaker": "11TH JUROR",
@@ -7736,7 +7796,7 @@
     "text": "Why?"
   },
   {
-    "id": 998,
+    "id": 1007,
     "page": 59,
     "type": "dialogue",
     "speaker": "7TH JUROR",
@@ -7744,7 +7804,7 @@
     "text": "Goddamn you. I don't have to ―"
   },
   {
-    "id": 999,
+    "id": 1008,
     "page": 59,
     "type": "dialogue",
     "speaker": "11TH JUROR",
@@ -7752,15 +7812,21 @@
     "text": "You do have to. Say it. Why?"
   },
   {
-    "id": 1000,
+    "id": 1009,
     "page": 60,
     "type": "dialogue",
     "speaker": "7TH JUROR",
     "direction": "in a low voice",
-    "text": "I ― don't think he's guilty. The 11TH JUROR looks disgustedly at the 7TH JUROR, then moves to his chair. The 7TH JUROR stands defeated."
+    "text": "I ― don't think he's guilty."
   },
   {
-    "id": 1001,
+    "id": 1010,
+    "page": 60,
+    "type": "stage",
+    "text": "The 11TH JUROR looks disgustedly at the 7TH JUROR, then moves to his chair. The 7TH JUROR stands defeated."
+  },
+  {
+    "id": 1011,
     "page": 60,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -7768,23 +7834,177 @@
     "text": "Mr. Foreman, I want another vote."
   },
   {
-    "id": 1002,
+    "id": 1012,
     "page": 60,
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "",
-    "text": "OK, there's another vote called for. The JURORS cross to their chairs and sit. I guess the quickest way is a show of hands. Anybody object? There is no answer. All those voting \"not guilty\" raise your hands. The 2nd, 5TH, 6TH, 7TH, 8TH, 9TH, and 11TH JURORS raise their hands immediately. One. Two. Three. Four. Five. Six. Seven. The 12TH JUROR's face is a mask of indecision, then he suddenly raises his hand. Eight. The FOREMAN stops counting and looks around the table. Slowly, almost embarrassed, he raises his own hand. Nine. [He lowers his hand.] All those voting \"guilty.\" The 3RD, 4TH, and 10TH JURORS raise their hands. Nine to three in favor of \"not guilty.\""
+    "text": "OK, there's another vote called for."
   },
   {
-    "id": 1003,
+    "id": 1013,
+    "page": 60,
+    "type": "stage",
+    "text": "The JURORS cross to their chairs and sit."
+  },
+  {
+    "id": 1014,
+    "page": 60,
+    "type": "dialogue",
+    "speaker": "FOREMAN",
+    "direction": "",
+    "text": "I guess the quickest way is a show of hands. Anybody object?"
+  },
+  {
+    "id": 1015,
+    "page": 60,
+    "type": "stage",
+    "text": "There is no answer."
+  },
+  {
+    "id": 1016,
+    "page": 60,
+    "type": "dialogue",
+    "speaker": "FOREMAN",
+    "direction": "",
+    "text": "All those voting \"not guilty\" raise your hands."
+  },
+  {
+    "id": 1017,
+    "page": 60,
+    "type": "stage",
+    "text": "The 2nd, 5TH, 6TH, 7TH, 8TH, 9TH, and 11TH JURORS raise their hands immediately."
+  },
+  {
+    "id": 1018,
+    "page": 60,
+    "type": "dialogue",
+    "speaker": "FOREMAN",
+    "direction": "",
+    "text": "One. Two. Three. Four. Five. Six. Seven."
+  },
+  {
+    "id": 1019,
+    "page": 60,
+    "type": "stage",
+    "text": "The 12TH JUROR's face is a mask of indecision, then he suddenly raises his hand."
+  },
+  {
+    "id": 1020,
+    "page": 60,
+    "type": "dialogue",
+    "speaker": "FOREMAN",
+    "direction": "",
+    "text": "Eight."
+  },
+  {
+    "id": 1021,
+    "page": 60,
+    "type": "stage",
+    "text": "The FOREMAN stops counting and looks around the table. Slowly, almost embarrassed, he raises his own hand."
+  },
+  {
+    "id": 1022,
+    "page": 60,
+    "type": "dialogue",
+    "speaker": "FOREMAN",
+    "direction": "",
+    "text": "Nine. [He lowers his hand.] All those voting \"guilty.\""
+  },
+  {
+    "id": 1023,
+    "page": 60,
+    "type": "stage",
+    "text": "The 3RD, 4TH, and 10TH JURORS raise their hands."
+  },
+  {
+    "id": 1024,
+    "page": 60,
+    "type": "dialogue",
+    "speaker": "FOREMAN",
+    "direction": "",
+    "text": "Nine to three in favor of \"not guilty.\""
+  },
+  {
+    "id": 1025,
     "page": 60,
     "type": "dialogue",
     "speaker": "10TH JUROR",
     "direction": "",
-    "text": "I don't understand you people. I mean, all these picky little points you keep bringing up. They don't mean nothing. How can you believe his story? [To the 11TH JUROR.] You're an intelligent man. Well, you're not going to tell me you're not. You know the facts of life. Well, for Christ's sakes look at what we're dealing with here. You know what they're like! I mean, that guy [he points to the 8TH JUROR]― over there, well, I don't know what the hell is going on with him. All that talk about psychiatrists. Maybe he ought to go to one. Look, let's talk facts. These people are born to lie. Now, it's the way they are and no intelligent man is going to tell me otherwise. They don't know what the truth is. Well, take a look at them. They are different. They think different. They act different. Well, for instance, they don't need any big excuse to kill someone. The 5TH JUROR crosses to the washroom door. Well, that's true. Everybody knows it. They get drunk on wine or something cheap like that. Oh, they're very big drinkers. The 5TH JUROR goes into the washroom, slams the door behind him. Smart guy! Look at him for Christ's sakes! What does that mean, slamming the door? And then they're drunk, and all of a sudden ― bang ― somebody's lying dead in the gutter. OK, nobody's blaming them for it. That's how they are, by nature, you know what I mean? Violent! Human life don't mean as much to them as it does to us. The 11TH JUROR rises and crosses to the washroom door. He follows the 5TH JUROR. Where are you going? The 11TH JUROR does not reply and goes into the washroom. While you're in there, clean out your ears, maybe you'll hear something. The 4TH JUROR rises and moves to the window. Look, you listen to me now. These people are boozing it up, and fighting all the time, and if somebody gets killed, so somebody gets killed. They don't care. Family don't mean anything to them. They breed like animals. Fathers, mothers, that don't mean anything. Oh sure, there are some good things about them. Look, I'm the first one to say that. I've known some who were OK, but that's the exception."
+    "text": "I don't understand you people. I mean, all these picky little points you keep bringing up. They don't mean nothing. How can you believe his story? [To the 11TH JUROR.] You're an intelligent man. Well, you're not going to tell me you're not. You know the facts of life. Well, for Christ's sakes look at what we're dealing with here. You know what they're like! I mean, that guy [he points to the 8TH JUROR]― over there, well, I don't know what the hell is going on with him. All that talk about psychiatrists. Maybe he ought to go to one. Look, let's talk facts. These people are born to lie. Now, it's the way they are and no intelligent man is going to tell me otherwise. They don't know what the truth is. Well, take a look at them. They are different. They think different. They act different. Well, for instance, they don't need any big excuse to kill someone."
   },
   {
-    "id": 1004,
+    "id": 1026,
+    "page": 61,
+    "type": "stage",
+    "text": "The 5TH JUROR crosses to the washroom door."
+  },
+  {
+    "id": 1027,
+    "page": 61,
+    "type": "dialogue",
+    "speaker": "10TH JUROR",
+    "direction": "",
+    "text": "Well, that's true. Everybody knows it. They get drunk on wine or something cheap like that. Oh, they're very big drinkers."
+  },
+  {
+    "id": 1028,
+    "page": 61,
+    "type": "stage",
+    "text": "The 5TH JUROR goes into the washroom, slams the door behind him."
+  },
+  {
+    "id": 1029,
+    "page": 61,
+    "type": "dialogue",
+    "speaker": "10TH JUROR",
+    "direction": "",
+    "text": "Smart guy! Look at him for Christ's sakes! What does that mean, slamming the door? And then they're drunk, and all of a sudden ― bang ― somebody's lying dead in the gutter. OK, nobody's blaming them for it. That's how they are, by nature, you know what I mean? Violent! Human life don't mean as much to them as it does to us."
+  },
+  {
+    "id": 1030,
+    "page": 61,
+    "type": "stage",
+    "text": "The 11TH JUROR rises and crosses to the washroom door. He follows the 5TH JUROR."
+  },
+  {
+    "id": 1031,
+    "page": 61,
+    "type": "dialogue",
+    "speaker": "10TH JUROR",
+    "direction": "",
+    "text": "Where are you going?"
+  },
+  {
+    "id": 1032,
+    "page": 61,
+    "type": "stage",
+    "text": "The 11TH JUROR does not reply and goes into the washroom."
+  },
+  {
+    "id": 1033,
+    "page": 61,
+    "type": "dialogue",
+    "speaker": "10TH JUROR",
+    "direction": "",
+    "text": "While you're in there, clean out your ears, maybe you'll hear something."
+  },
+  {
+    "id": 1034,
+    "page": 61,
+    "type": "stage",
+    "text": "The 4TH JUROR rises and moves to the window."
+  },
+  {
+    "id": 1035,
+    "page": 61,
+    "type": "dialogue",
+    "speaker": "10TH JUROR",
+    "direction": "",
+    "text": "Look, you listen to me now. These people are boozing it up, and fighting all the time, and if somebody gets killed, so somebody gets killed. They don't care. Family don't mean anything to them. They breed like animals. Fathers, mothers, that don't mean anything. Oh sure, there are some good things about them. Look, I'm the first one to say that. I've known some who were OK, but that's the exception."
+  },
+  {
+    "id": 1036,
     "page": 61,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -7792,7 +8012,7 @@
     "text": "Do you know you're a sick man?"
   },
   {
-    "id": 1005,
+    "id": 1037,
     "page": 61,
     "type": "dialogue",
     "speaker": "10TH JUROR",
@@ -7800,7 +8020,7 @@
     "text": "Sick?"
   },
   {
-    "id": 1006,
+    "id": 1038,
     "page": 61,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -7808,15 +8028,35 @@
     "text": "Why don't you sit down?"
   },
   {
-    "id": 1007,
+    "id": 1039,
     "page": 61,
     "type": "dialogue",
     "speaker": "10TH JUROR",
     "direction": "",
-    "text": "You old son of a bitch! Who the hell are you? The 6TH JUROR moves toward the 9TH JUROR. The 12TH JUROR steps between the 9TH and 10TH JURORS. [To the 12TH JUROR.] No. Who the hell is he to tell me that? Sick. Look at him ― he can hardly stand up. Listen, I'm speaking my piece here and you're going to listen. The 9TH JUROR moves to the window."
+    "text": "You old son of a bitch! Who the hell are you?"
   },
   {
-    "id": 1008,
+    "id": 1040,
+    "page": 61,
+    "type": "stage",
+    "text": "The 6TH JUROR moves toward the 9TH JUROR. The 12TH JUROR steps between the 9TH and 10TH JURORS."
+  },
+  {
+    "id": 1041,
+    "page": 61,
+    "type": "dialogue",
+    "speaker": "10TH JUROR",
+    "direction": "",
+    "text": "[To the 12TH JUROR.] No. Who the hell is he to tell me that? Sick. Look at him ― he can hardly stand up. Listen, I'm speaking my piece here and you're going to listen."
+  },
+  {
+    "id": 1042,
+    "page": 62,
+    "type": "stage",
+    "text": "The 9TH JUROR moves to the window."
+  },
+  {
+    "id": 1043,
     "page": 62,
     "type": "dialogue",
     "speaker": "12TH JUROR",
@@ -7824,7 +8064,7 @@
     "text": "Maybe if you just quieted down."
   },
   {
-    "id": 1009,
+    "id": 1044,
     "page": 62,
     "type": "dialogue",
     "speaker": "10TH JUROR",
@@ -7832,7 +8072,7 @@
     "text": "I will like hell quiet down. There is not one of them, not one who's any good. Now, did you hear that? Not one. Now let me lay this out for you ― ignorant ― bastards. [To the 9TH JUROR.] You at the window, you're so goddamned smart. We're facing a danger here. Don't you know it? These people are multiplying. That kid on trial, his type, they're multiplying five times as fast as we are. That's the statistic. Five times. And they are ― wild animals. They're against us, they hate us, they want to destroy us. That's right. [To the 6TH JUROR.] Don't look at me like that! There's a danger. For God's sake, we're living in a dangerous time, and if we don't watch it, if we don't smack them down whenever we can, then they are going to own us. They're going to breed us out of existence."
   },
   {
-    "id": 1010,
+    "id": 1045,
     "page": 62,
     "type": "dialogue",
     "speaker": "6TH JUROR",
@@ -7840,7 +8080,7 @@
     "text": "Ah, shut up!"
   },
   {
-    "id": 1011,
+    "id": 1046,
     "page": 62,
     "type": "dialogue",
     "speaker": "10TH JUROR",
@@ -7848,7 +8088,7 @@
     "text": "Now you goddamned geniuses had better listen to me. They're violent, they're vicious, they're ignorant, and they will cut us up. That's their intent. To cut us up. [To the 7TH JUROR.] I'm warning you. This boy, this boy on trial here. We've got him. That's one at least. I say get him before his kind gets us. I don't give a goddamn about the law. Why should I? They don't. Now I'm telling you."
   },
   {
-    "id": 1012,
+    "id": 1047,
     "page": 62,
     "type": "dialogue",
     "speaker": "2ND JUROR",
@@ -7856,23 +8096,35 @@
     "text": "I've heard enough. Now you just stop all this."
   },
   {
-    "id": 1013,
+    "id": 1048,
     "page": 62,
     "type": "dialogue",
     "speaker": "10TH JUROR",
     "direction": "looking angrily at the 2nd JUROR",
-    "text": "How would you like me to cave your head in for you, you smart little bastard? Where the hell do you get the gall...? The 4TH JUROR steps in front of the 10TH JUROR and stops him firmly."
+    "text": "How would you like me to cave your head in for you, you smart little bastard? Where the hell do you get the gall...?"
   },
   {
-    "id": 1014,
+    "id": 1049,
+    "page": 62,
+    "type": "stage",
+    "text": "The 4TH JUROR steps in front of the 10TH JUROR and stops him firmly."
+  },
+  {
+    "id": 1050,
     "page": 62,
     "type": "dialogue",
     "speaker": "4TH JUROR",
     "direction": "",
-    "text": "We've heard enough. Sit down. And don't open your filthy mouth again. The 4TH and 10TH JURORS stare at each other. Finally, the 10TH JUROR turns away, crosses to a chair and sits with his back to the others. The other JURORS (including the 5TH and 11TH JURORS) slowly cross to their seats."
+    "text": "We've heard enough. Sit down. And don't open your filthy mouth again."
   },
   {
-    "id": 1015,
+    "id": 1051,
+    "page": 62,
+    "type": "stage",
+    "text": "The 4TH and 10TH JURORS stare at each other. Finally, the 10TH JUROR turns away, crosses to a chair and sits with his back to the others. The other JURORS (including the 5TH and 11TH JURORS) slowly cross to their seats."
+  },
+  {
+    "id": 1052,
     "page": 62,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -7880,7 +8132,7 @@
     "text": "It's very hard to keep personal prejudice out of a thing like this. And no matter where you run into it, prejudice obscures the truth. Well, I don't think any real damage has been done here. Because I don't really know what the truth is. No one ever will, I suppose. Nine of us now seem to feel that the defendant is innocent, but we're just gambling on probabilities. We may be wrong. We may be trying to return a guilty man to the community. No one can really know. But we have a reasonable doubt, and this is a safeguard that has enormous value in our system. No jury can declare a man guilty unless it's sure. We nine can't understand how you three are still so sure. Maybe you can tell us."
   },
   {
-    "id": 1016,
+    "id": 1053,
     "page": 63,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -7888,7 +8140,7 @@
     "text": "I'll try. You've made some excellent points. The last one, in which you argued that the boy wouldn't have made the kind of overhand stab wound that killed his father, was very persuasive. But I still believe the boy is guilty of murder. I have two reasons. One: the evidence given by the woman across the street who actually saw the murder committed."
   },
   {
-    "id": 1017,
+    "id": 1054,
     "page": 63,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -7896,7 +8148,7 @@
     "text": "And how, brother! As far as I'm concerned that's the most important testimony in the whole case."
   },
   {
-    "id": 1018,
+    "id": 1055,
     "page": 63,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -7904,7 +8156,7 @@
     "text": "And two: the fact that this woman described the stabbing by saying she saw the boy raise his arm over his head and plunge the knife down into his father's chest. She saw him do it ― the wrong way."
   },
   {
-    "id": 1019,
+    "id": 1056,
     "page": 63,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -7912,7 +8164,7 @@
     "text": "That's right! That's absolutely right!"
   },
   {
-    "id": 1020,
+    "id": 1057,
     "page": 63,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -7920,7 +8172,7 @@
     "text": "Now, let's talk about this woman for a minute. She said that she went to bed at about eleven o'clock that night. Her bed was next to the window ― and she could look out while lying down and see directly into the boy's window across the tracks. She tossed and turned for over an hour, unable to fall asleep. Finally, she turned toward the window at about ten minutes after twelve, and, as she looked out, she saw the killing through the windows of the passing el train. She says that the lights went out immediately after the killing but that she got a good look at the boy in the act of stabbing his father. As far as I can see, this is unshakeable testimony."
   },
   {
-    "id": 1021,
+    "id": 1058,
     "page": 63,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -7928,15 +8180,29 @@
     "text": "That's what I mean. That's the whole case."
   },
   {
-    "id": 1022,
+    "id": 1059,
     "page": 63,
     "type": "dialogue",
     "speaker": "4TH JUROR",
     "direction": "to the 8TH JUROR",
-    "text": "What do you think? The 8TH JUROR remains silent. [Looking at the 12TH JUROR.] How about you?"
+    "text": "What do you think?"
   },
   {
-    "id": 1023,
+    "id": 1060,
+    "page": 63,
+    "type": "stage",
+    "text": "The 8TH JUROR remains silent."
+  },
+  {
+    "id": 1061,
+    "page": 63,
+    "type": "dialogue",
+    "speaker": "4TH JUROR",
+    "direction": "to the 8TH JUROR",
+    "text": "[Looking at the 12TH JUROR.] How about you?"
+  },
+  {
+    "id": 1062,
     "page": 64,
     "type": "dialogue",
     "speaker": "12TH JUROR",
@@ -7944,7 +8210,7 @@
     "text": "Well ― I don't know. There's so much evidence to sift. This is a pretty complicated business."
   },
   {
-    "id": 1024,
+    "id": 1063,
     "page": 64,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -7952,7 +8218,7 @@
     "text": "Frankly, I don't see how we can vote for acquittal."
   },
   {
-    "id": 1025,
+    "id": 1064,
     "page": 64,
     "type": "dialogue",
     "speaker": "12TH JUROR",
@@ -7960,7 +8226,7 @@
     "text": "Well, it's not so easy to arrange the evidence in order."
   },
   {
-    "id": 1026,
+    "id": 1065,
     "page": 64,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -7968,7 +8234,7 @@
     "text": "You can throw out all the other evidence. The woman saw him do it. What else do you want?"
   },
   {
-    "id": 1027,
+    "id": 1066,
     "page": 64,
     "type": "dialogue",
     "speaker": "12TH JUROR",
@@ -7976,7 +8242,7 @@
     "text": "Well, maybe..."
   },
   {
-    "id": 1028,
+    "id": 1067,
     "page": 64,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -7984,7 +8250,7 @@
     "text": "Let's vote on it."
   },
   {
-    "id": 1029,
+    "id": 1068,
     "page": 64,
     "type": "dialogue",
     "speaker": "FOREMAN",
@@ -7992,7 +8258,7 @@
     "text": "OK. There's another vote called for. Anybody object?"
   },
   {
-    "id": 1030,
+    "id": 1069,
     "page": 64,
     "type": "dialogue",
     "speaker": "12TH JUROR",
@@ -8000,7 +8266,7 @@
     "text": "I'm changing my vote. I think he's \"guilty.\""
   },
   {
-    "id": 1031,
+    "id": 1070,
     "page": 64,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8008,7 +8274,7 @@
     "text": "Anybody else? The vote is eight to four."
   },
   {
-    "id": 1032,
+    "id": 1071,
     "page": 64,
     "type": "dialogue",
     "speaker": "11TH JUROR",
@@ -8016,7 +8282,7 @@
     "text": "What makes you consider this one vote a personal triumph?"
   },
   {
-    "id": 1033,
+    "id": 1072,
     "page": 64,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8024,7 +8290,7 @@
     "text": "I'm the competitive type. [To the others.] OK. Now here's what I think. I think we're a hung jury. Let's take it inside to the Judge."
   },
   {
-    "id": 1034,
+    "id": 1073,
     "page": 64,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8032,7 +8298,7 @@
     "text": "You didn't want a hung jury before."
   },
   {
-    "id": 1035,
+    "id": 1074,
     "page": 64,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8040,7 +8306,7 @@
     "text": "Well, I want it now."
   },
   {
-    "id": 1036,
+    "id": 1075,
     "page": 64,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8048,7 +8314,7 @@
     "text": "I don't understand that. You thought it was immoral to ―"
   },
   {
-    "id": 1037,
+    "id": 1076,
     "page": 64,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8056,7 +8322,7 @@
     "text": "I don't anymore. There are people in here who are so goddamned stubborn that you can't even... We'll never get this thing done. We'll be here for a week. Well, I want to hear an argument. I say we're a hung jury. [He turns to the 8TH JUROR.] Come on. You're the leader of the cause. What about it?"
   },
   {
-    "id": 1038,
+    "id": 1077,
     "page": 64,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8064,7 +8330,7 @@
     "text": "Let's go over it again."
   },
   {
-    "id": 1039,
+    "id": 1078,
     "page": 64,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8072,15 +8338,21 @@
     "text": "We went over it again. [He waves toward the 11TH JUROR.] J. Walter Thompson over there is bouncing backward and forward like a tennis ball..."
   },
   {
-    "id": 1040,
+    "id": 1079,
     "page": 64,
     "type": "dialogue",
     "speaker": "12TH JUROR",
     "direction": "",
-    "text": "Wait a second. You have no right to... The 4TH JUROR removes his spectacles and polishes them."
+    "text": "Wait a second. You have no right to..."
   },
   {
-    "id": 1041,
+    "id": 1080,
+    "page": 64,
+    "type": "stage",
+    "text": "The 4TH JUROR removes his spectacles and polishes them."
+  },
+  {
+    "id": 1081,
     "page": 64,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8088,7 +8360,7 @@
     "text": "I apologize on my knees. [To the 8TH JUROR.] Come on. Let's get out from under this thing."
   },
   {
-    "id": 1042,
+    "id": 1082,
     "page": 64,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8096,7 +8368,7 @@
     "text": "All right. Maybe we can talk about setting some kind of a time limit. [Still polishing his spectacles, he turns and peers up at the clock.] The time is... [He squints and puts on his spectacles.]"
   },
   {
-    "id": 1043,
+    "id": 1083,
     "page": 65,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8104,15 +8376,21 @@
     "text": "Quarter after six."
   },
   {
-    "id": 1044,
+    "id": 1084,
     "page": 65,
     "type": "dialogue",
     "speaker": "4TH JUROR",
     "direction": "looking at the clock",
-    "text": "Quarter after six. [He removes his spectacles and lays them on the table. He looks tired. He closes his eyes and clasps his fingers over the marks left by his spectacles at the sides of his nose. He rubs these areas as he speaks.] Someone before mentioned seven o'clock. I think that's a point at which we might begin to discuss the question of whether we're a hung jury or not. The 9TH JUROR looks closely at the 4TH JUROR and obviously has thought of something tremendously exciting."
+    "text": "Quarter after six. [He removes his spectacles and lays them on the table. He looks tired. He closes his eyes and clasps his fingers over the marks left by his spectacles at the sides of his nose. He rubs these areas as he speaks.] Someone before mentioned seven o'clock. I think that's a point at which we might begin to discuss the question of whether we're a hung jury or not."
   },
   {
-    "id": 1045,
+    "id": 1085,
+    "page": 65,
+    "type": "stage",
+    "text": "The 9TH JUROR looks closely at the 4TH JUROR and obviously has thought of something tremendously exciting."
+  },
+  {
+    "id": 1086,
     "page": 65,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8120,7 +8398,7 @@
     "text": "Don't you feel well?"
   },
   {
-    "id": 1046,
+    "id": 1087,
     "page": 65,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8128,7 +8406,7 @@
     "text": "I feel perfectly well ― thank you. [To the others.] I was saying that seven o'clock would be a reasonable time to ―"
   },
   {
-    "id": 1047,
+    "id": 1088,
     "page": 65,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8136,7 +8414,7 @@
     "text": "The reason I asked about that was because you were rubbing your nose like... I'm sorry for interrupting. But you made a gesture that reminded me ―"
   },
   {
-    "id": 1048,
+    "id": 1089,
     "page": 65,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8144,7 +8422,7 @@
     "text": "I'm trying to settle something here. Do you mind?"
   },
   {
-    "id": 1049,
+    "id": 1090,
     "page": 65,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8152,7 +8430,7 @@
     "text": "I think this is important."
   },
   {
-    "id": 1050,
+    "id": 1091,
     "page": 65,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8160,7 +8438,7 @@
     "text": "Very well."
   },
   {
-    "id": 1051,
+    "id": 1092,
     "page": 65,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8168,7 +8446,7 @@
     "text": "Thank you. I'm sure you'll pardon me for this, but I was wondering why you were rubbing your nose like that?"
   },
   {
-    "id": 1052,
+    "id": 1093,
     "page": 65,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8176,7 +8454,7 @@
     "text": "Ah, come on, now, will you please!"
   },
   {
-    "id": 1053,
+    "id": 1094,
     "page": 65,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8184,7 +8462,7 @@
     "text": "Right now I happen to be talking to this gentleman here. [To the 4TH JUROR.] Now, why were you rubbing your nose?"
   },
   {
-    "id": 1054,
+    "id": 1095,
     "page": 65,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8192,7 +8470,7 @@
     "text": "Well, if it's any of your business, I was rubbing it because it bothers me a little."
   },
   {
-    "id": 1055,
+    "id": 1096,
     "page": 65,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8200,7 +8478,7 @@
     "text": "I'm sorry. Is it because of your eyeglasses?"
   },
   {
-    "id": 1056,
+    "id": 1097,
     "page": 65,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8208,7 +8486,7 @@
     "text": "It is. Now could we get on to something else?"
   },
   {
-    "id": 1057,
+    "id": 1098,
     "page": 65,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8216,7 +8494,7 @@
     "text": "Your eyeglasses make those deep impressions on the sides of your nose. I hadn't noticed that before. They must be annoying."
   },
   {
-    "id": 1058,
+    "id": 1099,
     "page": 65,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8224,7 +8502,7 @@
     "text": "They are very annoying."
   },
   {
-    "id": 1059,
+    "id": 1100,
     "page": 66,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8232,7 +8510,7 @@
     "text": "I wouldn't know about that. I've never worn eyeglasses. [He points to his eyes and smiles.] Twenty-twenty."
   },
   {
-    "id": 1060,
+    "id": 1101,
     "page": 66,
     "type": "dialogue",
     "speaker": "7TH JUROR",
@@ -8240,7 +8518,7 @@
     "text": "Listen, will you come on already with the optometrist bit."
   },
   {
-    "id": 1061,
+    "id": 1102,
     "page": 66,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8248,15 +8526,21 @@
     "text": "The woman who testified that she saw the killing had these same deep marks on the sides of her nose."
   },
   {
-    "id": 1062,
+    "id": 1103,
     "page": 66,
     "type": "dialogue",
     "speaker": "8TH JUROR",
     "direction": "",
-    "text": "That's right, she did. There is a silence in the room and then a babble of ad lib conversation."
+    "text": "That's right, she did."
   },
   {
-    "id": 1063,
+    "id": 1104,
+    "page": 66,
+    "type": "stage",
+    "text": "There is a silence in the room and then a babble of ad lib conversation."
+  },
+  {
+    "id": 1105,
     "page": 66,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8264,7 +8548,7 @@
     "text": "Please. Just a minute and then I'll be finished. I don't know if anyone else noticed that about her. I didn't think about it then, but I've been going over her face in my mind. She had those marks. She kept rubbing them in court."
   },
   {
-    "id": 1064,
+    "id": 1106,
     "page": 66,
     "type": "dialogue",
     "speaker": "5TH JUROR",
@@ -8272,7 +8556,7 @@
     "text": "He's right. She did do that a lot."
   },
   {
-    "id": 1065,
+    "id": 1107,
     "page": 66,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8280,7 +8564,7 @@
     "text": "This woman was about forty-five years old. She was making a tremendous effort to look thirty-five for her first public appearance. Heavy make-up. Dyed hair. Brand-new clothes that should have been worn by a younger woman. No eyeglasses. See if you can get a mental picture of her."
   },
   {
-    "id": 1066,
+    "id": 1108,
     "page": 66,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8288,7 +8572,7 @@
     "text": "What do you mean, no glasses? You don't know if she wore glasses. Just because she was rubbing her nose..."
   },
   {
-    "id": 1067,
+    "id": 1109,
     "page": 66,
     "type": "dialogue",
     "speaker": "5TH JUROR",
@@ -8296,7 +8580,7 @@
     "text": "She has those marks. I saw them."
   },
   {
-    "id": 1068,
+    "id": 1110,
     "page": 66,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8304,15 +8588,21 @@
     "text": "So what? What do you think that means?"
   },
   {
-    "id": 1069,
+    "id": 1111,
     "page": 66,
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "",
-    "text": "Listen, I saw them, too. He's right. I was the closest one to her. She had these deep things, what do you call them, uh ― you know. The FOREMAN massages the spot on his nose where they should be."
+    "text": "Listen, I saw them, too. He's right. I was the closest one to her. She had these deep things, what do you call them, uh ― you know."
   },
   {
-    "id": 1070,
+    "id": 1112,
+    "page": 66,
+    "type": "stage",
+    "text": "The FOREMAN massages the spot on his nose where they should be."
+  },
+  {
+    "id": 1113,
     "page": 66,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8320,7 +8610,7 @@
     "text": "Well, what point are you making here?"
   },
   {
-    "id": 1071,
+    "id": 1114,
     "page": 66,
     "type": "dialogue",
     "speaker": "FOREMAN",
@@ -8328,7 +8618,7 @@
     "text": "She had those marks."
   },
   {
-    "id": 1072,
+    "id": 1115,
     "page": 66,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8336,7 +8626,7 @@
     "text": "She had dyed hair and marks on her nose. I'm asking you what does that mean?"
   },
   {
-    "id": 1073,
+    "id": 1116,
     "page": 66,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8344,7 +8634,7 @@
     "text": "Could those marks be made by anything other than eyeglasses?"
   },
   {
-    "id": 1074,
+    "id": 1117,
     "page": 66,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8352,15 +8642,15 @@
     "text": "No. They couldn't."
   },
   {
-    "id": 1075,
+    "id": 1118,
     "page": 66,
     "type": "dialogue",
     "speaker": "3RD JUROR",
     "direction": "to the 4TH JUROR",
-    "text": "Listen,whatareyousayinghere?Ididn'tseeanymarks."
+    "text": "Listen, what are you saying here? I didn't see any marks."
   },
   {
-    "id": 1076,
+    "id": 1119,
     "page": 66,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8368,7 +8658,7 @@
     "text": "I did. Strange, but I didn't think about it before."
   },
   {
-    "id": 1077,
+    "id": 1120,
     "page": 67,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8376,7 +8666,7 @@
     "text": "Well, what about the lawyer? Why didn't he say anything?"
   },
   {
-    "id": 1078,
+    "id": 1121,
     "page": 67,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8384,7 +8674,7 @@
     "text": "There are twelve people in here concentrating on this case. Eleven of us didn't think of it, either."
   },
   {
-    "id": 1079,
+    "id": 1122,
     "page": 67,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8392,7 +8682,7 @@
     "text": "OK, Clarence Darrow. Then what about the District Attorney? You think he'd try to pull a trick like that, have her testify without glasses?"
   },
   {
-    "id": 1080,
+    "id": 1123,
     "page": 67,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8400,7 +8690,7 @@
     "text": "Did you ever see a woman who had to wear glasses and didn't want to because she thinks they spoil her looks?"
   },
   {
-    "id": 1081,
+    "id": 1124,
     "page": 67,
     "type": "dialogue",
     "speaker": "6TH JUROR",
@@ -8408,7 +8698,7 @@
     "text": "My wife. Listen, I'm telling you, as soon as we walk out of the house..."
   },
   {
-    "id": 1082,
+    "id": 1125,
     "page": 67,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8416,7 +8706,7 @@
     "text": "Maybe the District Attorney didn't know, either."
   },
   {
-    "id": 1083,
+    "id": 1126,
     "page": 67,
     "type": "dialogue",
     "speaker": "6TH JUROR",
@@ -8424,7 +8714,7 @@
     "text": "Yeah, that's what I was just going to say."
   },
   {
-    "id": 1084,
+    "id": 1127,
     "page": 67,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8432,7 +8722,7 @@
     "text": "OK. She had marks on her nose. I'm giving you this. From glasses. Right? She never wore them out of the house so people would think she was gorgeous. But when she saw this kid kill his father she was in the house. Alone. That's all."
   },
   {
-    "id": 1085,
+    "id": 1128,
     "page": 67,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8440,7 +8730,7 @@
     "text": "Do you wear your eyeglasses when you go to bed?"
   },
   {
-    "id": 1086,
+    "id": 1129,
     "page": 67,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8448,7 +8738,7 @@
     "text": "No, I don't. No one wears eyeglasses to bed."
   },
   {
-    "id": 1087,
+    "id": 1130,
     "page": 67,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8456,7 +8746,7 @@
     "text": "It's logical to say that she wasn't wearing them while she was in bed, tossing and turning, trying to fall asleep."
   },
   {
-    "id": 1088,
+    "id": 1131,
     "page": 67,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8464,7 +8754,7 @@
     "text": "How do you know?"
   },
   {
-    "id": 1089,
+    "id": 1132,
     "page": 67,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8472,7 +8762,7 @@
     "text": "I don't know. I'm guessing. I'm also guessing that she probably didn't put on her glasses when she turned and looked casually out of the window. And she herself said that the murder took place just as she looked out and the lights went off a split second later. She couldn't have had time to put glasses on then."
   },
   {
-    "id": 1090,
+    "id": 1133,
     "page": 67,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8480,7 +8770,7 @@
     "text": "Wait a second..."
   },
   {
-    "id": 1091,
+    "id": 1134,
     "page": 67,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8488,7 +8778,7 @@
     "text": "And here's another guess. Maybe she honestly thought she saw the boy kill his father. I say that she saw only a blur."
   },
   {
-    "id": 1092,
+    "id": 1135,
     "page": 67,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8496,7 +8786,7 @@
     "text": "How do you know what she saw? How does he know all these things? [To the 8TH JUROR.] You don't know what kind of glasses she wore. Maybe she was farsighted. Maybe they were sunglasses. What do you know about it?"
   },
   {
-    "id": 1093,
+    "id": 1136,
     "page": 67,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8504,7 +8794,7 @@
     "text": "I only know that the woman's eyesight is in question now."
   },
   {
-    "id": 1094,
+    "id": 1137,
     "page": 68,
     "type": "dialogue",
     "speaker": "11TH JUROR",
@@ -8512,7 +8802,7 @@
     "text": "She had to identify a person sixty feet away in the dark, without glasses."
   },
   {
-    "id": 1095,
+    "id": 1138,
     "page": 68,
     "type": "dialogue",
     "speaker": "2ND JUROR",
@@ -8520,7 +8810,7 @@
     "text": "You can't send someone off to die on evidence like that."
   },
   {
-    "id": 1096,
+    "id": 1139,
     "page": 68,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8528,7 +8818,7 @@
     "text": "Don't give me that!"
   },
   {
-    "id": 1097,
+    "id": 1140,
     "page": 68,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8536,7 +8826,7 @@
     "text": "Don't you think that the woman might have made a mistake?"
   },
   {
-    "id": 1098,
+    "id": 1141,
     "page": 68,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8544,7 +8834,7 @@
     "text": "No!"
   },
   {
-    "id": 1099,
+    "id": 1142,
     "page": 68,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8552,7 +8842,7 @@
     "text": "It's not possible?"
   },
   {
-    "id": 1100,
+    "id": 1143,
     "page": 68,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8560,7 +8850,7 @@
     "text": "No! It's not possible."
   },
   {
-    "id": 1101,
+    "id": 1144,
     "page": 68,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8568,7 +8858,7 @@
     "text": "Is it possible?"
   },
   {
-    "id": 1102,
+    "id": 1145,
     "page": 68,
     "type": "dialogue",
     "speaker": "12TH JUROR",
@@ -8576,7 +8866,7 @@
     "text": "Yes. I say \"not guilty.\""
   },
   {
-    "id": 1103,
+    "id": 1146,
     "page": 68,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8584,7 +8874,7 @@
     "text": "Do you still think he's guilty?"
   },
   {
-    "id": 1104,
+    "id": 1147,
     "page": 68,
     "type": "dialogue",
     "speaker": "10TH JUROR",
@@ -8592,7 +8882,7 @@
     "text": "Yes, I think he's guilty. But I couldn't care less. You smart bastards do whatever you want to do."
   },
   {
-    "id": 1105,
+    "id": 1148,
     "page": 68,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8600,7 +8890,7 @@
     "text": "How do you vote?"
   },
   {
-    "id": 1106,
+    "id": 1149,
     "page": 68,
     "type": "dialogue",
     "speaker": "10TH JUROR",
@@ -8608,7 +8898,7 @@
     "text": "\"Not guilty.\" Do whatever you want."
   },
   {
-    "id": 1107,
+    "id": 1150,
     "page": 68,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8616,7 +8906,7 @@
     "text": "You're the worst son of a... I think he's guilty."
   },
   {
-    "id": 1108,
+    "id": 1151,
     "page": 68,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8624,7 +8914,7 @@
     "text": "Does anyone else think he's guilty?"
   },
   {
-    "id": 1109,
+    "id": 1152,
     "page": 68,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8632,7 +8922,7 @@
     "text": "No, I'm convinced."
   },
   {
-    "id": 1110,
+    "id": 1153,
     "page": 68,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8640,7 +8930,7 @@
     "text": "What's the matter with you?"
   },
   {
-    "id": 1111,
+    "id": 1154,
     "page": 68,
     "type": "dialogue",
     "speaker": "4TH JUROR",
@@ -8648,7 +8938,7 @@
     "text": "I now have a reasonable doubt."
   },
   {
-    "id": 1112,
+    "id": 1155,
     "page": 68,
     "type": "dialogue",
     "speaker": "9TH JUROR",
@@ -8656,7 +8946,7 @@
     "text": "It's eleven to one."
   },
   {
-    "id": 1113,
+    "id": 1156,
     "page": 68,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8664,7 +8954,7 @@
     "text": "Well, what about all the other evidence? What about all that stuff ― the knife ― the whole business?"
   },
   {
-    "id": 1114,
+    "id": 1157,
     "page": 68,
     "type": "dialogue",
     "speaker": "2ND JUROR",
@@ -8672,7 +8962,7 @@
     "text": "You said we could throw out all the other evidence."
   },
   {
-    "id": 1115,
+    "id": 1158,
     "page": 68,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8680,7 +8970,7 @@
     "text": "You're alone."
   },
   {
-    "id": 1116,
+    "id": 1159,
     "page": 68,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8688,7 +8978,7 @@
     "text": "I don't care whether I'm alone or not. It's my right."
   },
   {
-    "id": 1117,
+    "id": 1160,
     "page": 68,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8696,7 +8986,7 @@
     "text": "It's your right."
   },
   {
-    "id": 1118,
+    "id": 1161,
     "page": 68,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8704,7 +8994,7 @@
     "text": "Well, what do you want? I say he's guilty."
   },
   {
-    "id": 1119,
+    "id": 1162,
     "page": 68,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8712,7 +9002,7 @@
     "text": "We want your arguments."
   },
   {
-    "id": 1120,
+    "id": 1163,
     "page": 68,
     "type": "dialogue",
     "speaker": "3RD JUROR",
@@ -8720,7 +9010,7 @@
     "text": "I gave you my arguments."
   },
   {
-    "id": 1121,
+    "id": 1164,
     "page": 68,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8728,15 +9018,57 @@
     "text": "We're not convinced. We want to hear them again. We have as much time as it takes."
   },
   {
-    "id": 1122,
+    "id": 1165,
     "page": 69,
     "type": "dialogue",
     "speaker": "3RD JUROR",
     "direction": "",
-    "text": "Everything ― every single thing that came out in that courtroom, but I mean everything, says he's guilty. Do you think I'm an idiot or something? You lousy bunch of bleeding hearts. You're not going to intimidate me. I'm entitled to my opinion. I can sit in this goddamn room for a year. Somebody say something. The others watch silently. Why don't you take that stuff about the old man ― the old man who lived there ― and heard everything. Or take the knife, what ― just because he ― found one like it? The old man saw him. Right there on the stairs. What's the difference how many seconds it took? What's the difference? Every single thing. The knife falling through a hole in his pocket ― you can't prove that he didn't get to the door. Sure you can hobble around the room all you want, but you can't prove it. I'm telling you every single thing that went on has been twisted and turned in here. That business with the glasses, how do you know she didn't have them on? The woman testified in court. Well, what do you want? That's it. The others are silent. That's the whole case. The others are silent. That whole thing about hearing the boy yell? The phrase was \"I'm going to kill you.\" That's what he said. To his own father. I don't care what kind of man that was. It was his father. That goddamn rotten kid. I know him. What they're like. What they do to you. How they kill you every day. My God, don't you see? How come I'm the only one who sees? Jeez, I can feel that knife going in."
+    "text": "Everything ― every single thing that came out in that courtroom, but I mean everything, says he's guilty. Do you think I'm an idiot or something? You lousy bunch of bleeding hearts. You're not going to intimidate me. I'm entitled to my opinion. I can sit in this goddamn room for a year. Somebody say something."
   },
   {
-    "id": 1123,
+    "id": 1166,
+    "page": 69,
+    "type": "stage",
+    "text": "The others watch silently."
+  },
+  {
+    "id": 1167,
+    "page": 69,
+    "type": "dialogue",
+    "speaker": "3RD JUROR",
+    "direction": "",
+    "text": "Why don't you take that stuff about the old man ― the old man who lived there ― and heard everything. Or take the knife, what ― just because he ― found one like it? The old man saw him. Right there on the stairs. What's the difference how many seconds it took? What's the difference? Every single thing. The knife falling through a hole in his pocket ― you can't prove that he didn't get to the door. Sure you can hobble around the room all you want, but you can't prove it. I'm telling you every single thing that went on has been twisted and turned in here. That business with the glasses, how do you know she didn't have them on? The woman testified in court. Well, what do you want? That's it."
+  },
+  {
+    "id": 1168,
+    "page": 69,
+    "type": "stage",
+    "text": "The others are silent."
+  },
+  {
+    "id": 1169,
+    "page": 69,
+    "type": "dialogue",
+    "speaker": "3RD JUROR",
+    "direction": "",
+    "text": "That's the whole case."
+  },
+  {
+    "id": 1170,
+    "page": 69,
+    "type": "stage",
+    "text": "The others are silent."
+  },
+  {
+    "id": 1171,
+    "page": 69,
+    "type": "dialogue",
+    "speaker": "3RD JUROR",
+    "direction": "",
+    "text": "That whole thing about hearing the boy yell? The phrase was \"I'm going to kill you.\" That's what he said. To his own father. I don't care what kind of man that was. It was his father. That goddamn rotten kid. I know him. What they're like. What they do to you. How they kill you every day. My God, don't you see? How come I'm the only one who sees? Jeez, I can feel that knife going in."
+  },
+  {
+    "id": 1172,
     "page": 69,
     "type": "dialogue",
     "speaker": "8TH JUROR",
@@ -8744,23 +9076,35 @@
     "text": "It's not your boy. He's somebody else."
   },
   {
-    "id": 1124,
+    "id": 1173,
     "page": 69,
     "type": "dialogue",
     "speaker": "4TH JUROR",
     "direction": "",
-    "text": "Let him live. There's a long pause."
+    "text": "Let him live."
   },
   {
-    "id": 1125,
+    "id": 1174,
+    "page": 69,
+    "type": "stage",
+    "text": "There's a long pause."
+  },
+  {
+    "id": 1175,
     "page": 69,
     "type": "dialogue",
     "speaker": "3RD JUROR",
     "direction": "",
-    "text": "All right. \"Not guilty.\" The FOREMAN moves to the door and knocks on it. The GUARD unlocks the door and enters."
+    "text": "All right. \"Not guilty.\""
   },
   {
-    "id": 1126,
+    "id": 1176,
+    "page": 69,
+    "type": "stage",
+    "text": "The FOREMAN moves to the door and knocks on it. The GUARD unlocks the door and enters."
+  },
+  {
+    "id": 1177,
     "page": 69,
     "type": "dialogue",
     "speaker": "FOREMAN",
@@ -8768,11 +9112,23 @@
     "text": "We have a verdict."
   },
   {
-    "id": 1127,
+    "id": 1178,
     "page": 70,
     "type": "dialogue",
     "speaker": "GUARD",
     "direction": "",
-    "text": "All right, gentlemen. Take your seats in the jury box. The GUARD exits. The FOREMAN and the other JURORS collect their jackets, etc., and all except the 3RD and the 8TH JURORS follow him off. The 3RD JUROR remains seated. Finally only he and the 8TH JUROR remain in the room. The 8TH JUROR puts on his own jacket and brings the 3RD JUROR's jacket to him. The 3RD JUROR rises. The 8TH JUROR helps him on with his jacket. The 3RD JUROR exits. The 8TH JUROR follows, but pauses at the door and looks back at the empty jury room. The knife still sticks into the table. The 8TH JUROR exits. The rain has stopped. CURTAIN"
+    "text": "All right, gentlemen. Take your seats in the jury box."
+  },
+  {
+    "id": 1179,
+    "page": 70,
+    "type": "stage",
+    "text": "The GUARD exits. The FOREMAN and the other JURORS collect their jackets, etc., and all except the 3RD and the 8TH JURORS follow him off. The 3RD JUROR remains seated. Finally only he and the 8TH JUROR remain in the room. The 8TH JUROR puts on his own jacket and brings the 3RD JUROR's jacket to him. The 3RD JUROR rises. The 8TH JUROR helps him on with his jacket. The 3RD JUROR exits. The 8TH JUROR follows, but pauses at the door and looks back at the empty jury room. The knife still sticks into the table. The 8TH JUROR exits. The rain has stopped."
+  },
+  {
+    "id": 1180,
+    "page": 70,
+    "type": "stage",
+    "text": "CURTAIN"
   }
 ]
