@@ -373,7 +373,7 @@
   },
   {
     "id": 52,
-    "page": 3,
+    "page": 4,
     "type": "dialogue",
     "speaker": "12TH JUROR",
     "direction": "to the 8TH JUROR",
@@ -555,7 +555,7 @@
     "type": "dialogue",
     "speaker": "7TH JUROR",
     "direction": "to the 2ND JUROR",
-    "text": "This better be fast. I got tickets to a ball game tonight. Yankees ― Cleveland. We got this new kid pitching, Modjelewski, or whatever his name is. He's a bull, this kid. [He shoots his hand forward and out to indicate the path of a curve ball] Shhooooom. A real jug handle."
+    "text": "This better be fast. I got tickets to a ball game tonight. Yankees ― Cleveland. We got this new kid pitching, Modjelewski, or whatever his name is. He's a bull, this kid. [He shoots his hand forward and out to indicate the path of a curve ball.] Shhooooom. A real jug handle."
   },
   {
     "id": 76,
@@ -1139,7 +1139,7 @@
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "hesitantly",
-    "text": "Well, who's got something to say?  How about you?"
+    "text": "Well, who's got something to say?"
   },
   {
     "id": 152,
@@ -2153,7 +2153,7 @@
     "type": "dialogue",
     "speaker": "3RD JUROR",
     "direction": "",
-    "text": "We all know what it looks like.  What are we going to get out of seeing it again?"
+    "text": "We all know what it looks like."
   },
   {
     "id": 281,
@@ -2215,7 +2215,7 @@
     "type": "dialogue",
     "speaker": "4TH JUROR",
     "direction": "",
-    "text": "After being hit several times by his father. Two. The boy went directly to a neighborhood junk shop where he bought a... What do you call these things― Switch knives."
+    "text": "After being hit several times by his father. Two. The boy went directly to a neighborhood junk shop where he bought a... What do you call these things―"
   },
   {
     "id": 289,
@@ -2811,7 +2811,7 @@
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "",
-    "text": "Anyone doesn't agree? OK. Pass these along. [He passes out slips of paper.]  \"Guilty. \" He opens and reads the other slips in turn. \"Guilty.\" \"Guilty.\" \"Guilty.\" \"Guilty.\" \"Guilty.\" \"Guilty.\" \"Guilty.\" \"Guilty.\" \"Not Guilty.\" There is a babble of voices. The 8TH JUROR relaxes, moves to his chair and sits. [Reading the last slip.] \"Guilty. \""
+    "text": "Anyone doesn't agree? OK. Pass these along. [He passes out slips of paper.]"
   },
   {
     "id": 365,
@@ -6137,7 +6137,7 @@
   },
   {
     "id": 793,
-    "page": 48,
+    "page": 47,
     "type": "stage",
     "text": "It has grown considerably darker in the room and it's oppressively still. There is a murmur of voices at the cooler where the 7TH, 10TH, and 2ND JURORS are in various stages of getting a drink."
   },
@@ -6259,13 +6259,13 @@
   },
   {
     "id": 809,
-    "page": 49,
+    "page": 48,
     "type": "stage",
     "text": "The 3RD JUROR crosses to the washroom, goes in, switches on the light and washes his hands."
   },
   {
     "id": 810,
-    "page": 48,
+    "page": 49,
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "",
@@ -6279,7 +6279,7 @@
   },
   {
     "id": 812,
-    "page": 48,
+    "page": 49,
     "type": "dialogue",
     "speaker": "FOREMAN",
     "direction": "",
