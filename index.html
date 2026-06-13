@@ -144,10 +144,30 @@ button:hover{
 }
 
 .line{
-  padding:12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family:
+    Verdana,
+    "Segoe UI",
+    Roboto,
+    "Noto Sans",
+    sans-serif;
+  padding:8px;
   border-radius:12px;
   margin:10px 0;
   background:var(--panel2);
+}
+
+.scriptLine{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family:
+    Verdana,
+    "Segoe UI",
+    Roboto,
+    "Noto Sans",
+    sans-serif;
+  margin:10px 0;
 }
 
 .small{
@@ -166,7 +186,7 @@ button:hover{
 
 .speaker{
   font-weight:bold;
-  margin-bottom:8px;
+  margin-bottom:6px;
 }
 
 .text{
@@ -328,6 +348,15 @@ button:hover{
     <select id="pageSelect">
     </select>
     </div>
+
+    <select id="viewMode">
+    <option value="block">
+      ブロック表示
+    </option>
+    <option value="script">
+      台本表示
+    </option>
+  </select>
 
   </div>
 
@@ -522,8 +551,8 @@ function render(showAnswer=false){
   viewer.innerHTML="";
 
   for(
-    let i=currentIndex-2;
-    i<=currentIndex+2;
+    let i=currentIndex-5;
+    i<=currentIndex+10;
     i++
   ){
 
@@ -532,11 +561,15 @@ function render(showAnswer=false){
 
     const item=scriptData[i];
 
+    const viewMode = document.getElementById("viewMode");
+
     const div=
       document.createElement("div");
 
-    div.className="line";
-
+    if(viewMode.value==="block"){
+      div.className="line";
+    }
+    
     if(i===currentIndex){
       div.classList.add("current");
     }else{
@@ -588,16 +621,42 @@ function render(showAnswer=false){
       displayText=item.text||""
     }
 
-    div.innerHTML=`
-        <div
-          class="speaker"
-          style="color:${speakerColor(speaker)}">
-          ${speaker}: ${(item.direction) ? `[${item.direction}]` : ""}
+    let displayColor="";
+
+    if(item.type==="stage"){
+      displayColor = "navy";
+    }else{
+      displayColor = "black";
+    }
+
+    if(viewMode.value==="block"){
+      div.innerHTML=`
+        <div class="speaker">
+          <span style="color:${speakerColor(speaker)};">
+            ${speaker}
+          </span>
+          ${(item.direction) ? `[${item.direction}]` : ""}:
         </div>
-        <div class="text">
+        <div class="text" style="color: ${displayColor};">
           ${displayText}
         </div>
       `;
+    }else{
+      div.innerHTML=`
+        <div class="scriptLine">
+          <span
+            style=
+              "color:${speakerColor(speaker)};
+              font-weight:bold;">
+            ${speaker} 
+          </span>
+          ${(item.direction) ? `[${item.direction}]` : ""}:
+          <span style="color: ${displayColor};">
+            ${displayText}
+          </span>
+        </div>
+      `;
+    }
 
     viewer.appendChild(div);
   }
@@ -1126,6 +1185,9 @@ revealBtn.onclick = ()=>{
   playLoop(showAnswer=true);
   revealBtn.style.visibility = "hidden";
 };
+
+document.getElementById("viewMode")
+  .addEventListener("change", render);
 
 
 </script>
