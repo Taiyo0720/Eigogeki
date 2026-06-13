@@ -301,7 +301,7 @@ button:hover{
     </div>
 
     <div>
-    <label>声色</label>
+    <label>読み上げ</label>
     <select id="voiceSelect"></select>
     </div>
 
@@ -324,7 +324,7 @@ button:hover{
     </div>
 
     <div>
-    <label>ページ</label>
+    <label>ページジャンプ</label>
     <select id="pageSelect">
     </select>
     </div>
@@ -380,6 +380,10 @@ button:hover{
     🌐 DeepLで翻訳
     </button>
 
+    <button id="EEDictBtn">
+    🔍 英英辞典を開く
+    </button>
+
     <button id="copyCurrentBtn">
     📋 このセリフをコピー
     </button>
@@ -424,6 +428,17 @@ document
 
   window.open(
     url,
+    "_blank"
+  );
+
+};
+
+document
+.getElementById("EEDictBtn")
+.onclick = ()=>{
+
+  window.open(
+    "https://www.oxfordlearnersdictionaries.com/",
     "_blank"
   );
 
@@ -592,6 +607,10 @@ function render(showAnswer=false){
     .textContent=
       `${currentIndex+1} / ${scriptData.length} (p.${scriptData[currentIndex].page || "?"})`;
 
+  document
+    .getElementById("pageSelect")
+    .value = scriptData[currentIndex].page;
+  
   updateYourTurn();
 }
 
