@@ -285,7 +285,7 @@ button:hover{
 
   <div class="top-panel">
 
-    <input type="file" id="fileInput" accept=".json">
+    <input type="file" id="fileInput" accept=".json" hidden>
 
     <div class="grid" style="margin-top:15px;">
 
@@ -417,10 +417,6 @@ button:hover{
     📋 このセリフをコピー
     </button>
 
-    <button id="revealDialogBtn" style="visibility: hidden; background-color: red;">
-    ポーズを解除
-    </button>
-
   </div>
 
 </div>
@@ -434,8 +430,6 @@ let currentPage=0;
 let playing=false;
 
 let voices = [];
-
-const revealBtn = document.getElementById("revealDialogBtn");
 
 document
 .getElementById("deeplBtn")
@@ -845,10 +839,9 @@ async function playLoop(showAnswer=false){
         .getElementById(
           "status"
         ).textContent=
-          "あなたの番（ポーズ中）";
+          "あなたの番（「▶️再生」を押して次へ）";
 
       playing=false;
-      revealBtn.style.visibility="visible";
       return;
 
     }
@@ -1179,11 +1172,6 @@ document
     item.text || ""
   );
 
-};
-
-revealBtn.onclick = ()=>{
-  playLoop(showAnswer=true);
-  revealBtn.style.visibility = "hidden";
 };
 
 document.getElementById("viewMode")
